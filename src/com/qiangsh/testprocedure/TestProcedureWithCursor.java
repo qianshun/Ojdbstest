@@ -1,4 +1,4 @@
-package com.qiangsh.testsimplepro;
+package com.qiangsh.testprocedure;
 
 import com.qiangsh.utils.JDBCUtils;
 import oracle.jdbc.OracleCallableStatement;
@@ -13,7 +13,7 @@ public class TestProcedureWithCursor {
         Connection conn =null; //数据库连接
         CallableStatement cs=null; //提供调用存储过程的方法
         ResultSet rs=null;
-        String sql="{call OJDBCTEST_PKG.queryEmpList(?,?)}";//sql语句
+        String sql="{call OJDBCTEST_PKG.QUERYEMPLIST(?,?)}";//sql语句
         try {
             conn= JDBCUtils.getConnection();//获取链接
             cs=conn.prepareCall(sql); //预处理

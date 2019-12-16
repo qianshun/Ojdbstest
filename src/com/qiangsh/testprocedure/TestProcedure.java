@@ -1,4 +1,4 @@
-package com.qiangsh.testsimplepro;
+package com.qiangsh.testprocedure;
 
 import com.qiangsh.utils.JDBCUtils;
 import oracle.jdbc.OracleTypes;
